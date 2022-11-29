@@ -1,0 +1,232 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+body {
+  line-height: 1.5;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #0e0e0e;
+}
+
+#main {
+  background-color: white;
+  width: 203px;
+  /* height: 696px; */
+  display: block;
+  margin: 0 auto;
+}
+
+#header {
+  height: 29px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#jbox {
+  width: 16px;
+  height: 16px;
+  background-color: black;
+  border-radius: 2px;
+  margin-left: 5px;
+  margin-top: 6px;
+}
+
+#jbox p {
+  color: white;
+  font-size: 8px;
+  line-height: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#contact {
+  list-style-type: none;
+  margin-right: 2px;
+  display: flex;
+  align-items: center;
+}
+
+#contact li {
+  background-color: #f26464;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10px;
+  width: 10px;
+  margin: 3px;
+}
+
+#contact li:hover {
+  background-color: yellow;
+}
+
+#contact li a {
+  color: white;
+  text-decoration: none;
+  font-size: 6px;
+}
+
+#contact li a:hover {
+  color: black;
+}
+
+#content {
+  margin: 12px 9px 0px;
+}
+
+#picture {
+  width: 100%;
+}
+
+#introduce {
+  margin-top: 15px;
+}
+
+#introduce p {
+  text-transform: uppercase;
+  font-size: 6px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+#introduce h1 {
+  font-style: bold;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+#exp {
+  margin-top: 10px;
+  width: 70%;
+}
+
+#exp #exp-number {
+  font-size: 11px;
+  font-weight: 800;
+  color: #f26464;
+}
+
+#exp #exp-text {
+  font-size: 5px;
+  color: grey;
+  letter-spacing: 0.5px;
+}
+
+#about {
+  margin-top: 10px;
+}
+.aboutme-btn {
+  font-size: 6px;
+  text-transform: uppercase;
+  font-weight: 700;
+  word-spacing: 1px;
+  border: none;
+  background-color: white;
+  width: 34px;
+  height: 10px;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: solid 1px #f26464;
+}
+
+#about p {
+  margin-top: 7px;
+  text-transform: none;
+  font-size: 5px;
+  color: grey;
+  font-weight: 400;
+  line-height: 10px;
+  word-spacing: 1px;
+}
+
+#footer {
+  margin-top: 30px;
+  background-color: black;
+  height: auto;
+  color: white;
+  text-align: center;
+  word-spacing: 1px;
+}
+
+#touch {
+  padding-top: 20px;
+  font-size: 6px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: grey;
+}
+
+#talk {
+  padding-top: 5px;
+  font-weight: 600;
+}
+
+#feel {
+  font-size: 7px;
+  word-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.talk-btn {
+  color: #f26464;
+  font-size: 4px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  width: 39px;
+  height: 13px;
+  letter-spacing: 1px;
+  background-color: black;
+  border: solid 1px #f26464;
+  cursor: pointer;
+}
+
+.talk-btn:hover {
+  border: solid 1px yellow;
+  color: yellow;
+}
+
+#cre {
+  padding-top: 10px;
+  font-size: 5px;
+  color: grey;
+  padding-bottom: 20px;
+  font-weight: 500;
+}
