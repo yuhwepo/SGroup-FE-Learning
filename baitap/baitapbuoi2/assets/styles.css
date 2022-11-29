@@ -192,6 +192,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   color: grey;
+  letter-spacing: 0.5px;
 }
 
 #talk {
@@ -203,19 +204,21 @@ body {
   font-size: 7px;
   word-spacing: 1px;
   margin-bottom: 8px;
+  letter-spacing: 0.4px;
 }
 
 .talk-btn {
   color: #f26464;
-  font-size: 4px;
+  font-size: 5px;
   text-transform: uppercase;
   border-radius: 10px;
-  width: 39px;
-  height: 13px;
+  width: 48px;
+  height: 16px;
   letter-spacing: 1px;
   background-color: black;
   border: solid 1px #f26464;
   cursor: pointer;
+  line-height: 15px;
 }
 
 .talk-btn:hover {
@@ -229,4 +232,5 @@ body {
   color: grey;
   padding-bottom: 20px;
   font-weight: 500;
+  letter-spacing: 0.4px;
 }
