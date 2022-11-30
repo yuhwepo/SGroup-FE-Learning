@@ -39,6 +39,14 @@ html {
   font-family: "Inter", sans-serif;
 }
 
+td {
+  vertical-align: top;
+}
+
+ul {
+  list-style: none;
+}
+
 #main {
 }
 
@@ -46,7 +54,8 @@ html {
   height: 41px;
   display: flex;
   justify-content: space-between;
-  margin: 50px 220px 0 245px;
+  margin-top: 50px;
+  padding: 0 220px 0 245px;
 }
 
 #ybox {
@@ -89,7 +98,7 @@ html {
   align-items: center;
   height: 20px;
   width: 20px;
-  margin: 5px;
+  margin-left: 10px;
 }
 
 #contact li:hover {
@@ -208,6 +217,8 @@ html {
 }
 
 .skills {
+  width: 100%;
+  padding: 80px 0;
 }
 
 .skill-title {
@@ -215,11 +226,25 @@ html {
   padding-top: 50px;
 }
 
+.skill-box {
+  width: 470px;
+}
+
 .skill-text {
   font-size: 15px;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.6);
   padding: 7px 17px;
+}
+
+.skills ul li::before {
+  content: "\2022";
+  color: black;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -0.7em;
+  font-size: 1.5em;
 }
 
 .skill-btn {
@@ -253,7 +278,7 @@ html {
 
 .we-text {
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.7);
+  color: grey;
   font-weight: 400;
   width: 450px;
 }
@@ -267,7 +292,7 @@ td.we-text > ul {
   width: 450px;
 }
 
-td.we-text > p, 
+td.we-text > p,
 td.we-text > li {
   margin-bottom: 15px;
 }
