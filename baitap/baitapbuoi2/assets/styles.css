@@ -293,8 +293,8 @@ td.we-text > ul {
 }
 
 td.we-text > p,
-td.we-text > li {
-  margin-bottom: 15px;
+td.we-text > ul > li {
+  margin-bottom: 10px;
 }
 
 .work-box {
