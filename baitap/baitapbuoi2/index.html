@@ -17,8 +17,9 @@
   <body>
     <div id="main">
       <div id="header">
-        <div id="jbox">
-          <p>J</p>
+        <div id="ybox">
+          <p class="ybox-logo">Y</p>
+          <p class="ybox-text">YUH WEPO</p>
         </div>
         <ul id="contact">
           <li>
@@ -38,39 +39,235 @@
           </li>
         </ul>
       </div>
-      <div id="content">
-        <div id="picture">
-          <img src="./assets/img/picture_P.jpg" alt="" />
-        </div>
-        <div id="introduce">
-          <p>Hi There</p>
-          <h1>
-            I'm Jason Stroff <br />UI/UX DESIGNER + DEVELOPER based in Florida.
-          </h1>
-          <table cellspacing="0" id="exp">
-            <tr id="exp-number">
-              <td>6+</td>
-              <td>89</td>
-              <td>52</td>
-            </tr>
-            <tr id="exp-text">
-              <td>Experience</td>
-              <td>Projects</td>
-              <td>Happy Clients</td>
-            </tr>
-          </table>
-          <div id="about">
-            <button class="active aboutme-btn">About me</button>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-              interdum ante a porta blandit. Quisque velit tortor, ultricies in
-              quam ut, luctus convallis metus. Nunc vitae felis rutrum, mattis
-              justo quis, bibendum tellus. Integer bibendum eget dolor nec
-              venenatis. Aliquam erat volutpat. Etiam et est vitae turpis
-              accumsan vulputate. Curabitur et vehicula nisl, eu congue dolor.
-              Vivamus nec hendrerit mi Nulla consequat tempor.
-            </p>
+      <div id="container">
+        <div id="content">
+          <div id="picture">
+            <img src="./assets/img/logo.jpg" alt="" />
           </div>
+          <div id="introduce">
+            <p>Hi There</p>
+            <h1>
+              I'm Yuh Wepo <br />UI/UX DESIGNER + DEVELOPER based in Florida.
+            </h1>
+            <table cellspacing="0" id="exp">
+              <tr id="exp-number">
+                <td>20+</td>
+                <td>69</td>
+                <td>92</td>
+              </tr>
+              <tr id="exp-text">
+                <td>Experience</td>
+                <td>Projects</td>
+                <td>Happy Clients</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div id="about">
+          <button class="active about-btn">
+            <p class="skill-text"></p>
+            About me
+          </button>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+            interdum ante a porta blandit. Quisque velit tortor, ultricies in
+            quam ut, luctus convallis metus. Nunc vitae felis rutrum, mattis
+            justo quis, bibendum tellus. Integer bibendum eget dolor nec
+            venenatis. Aliquam erat volutpat. Etiam et est vitae turpis accumsan
+            vulputate. Curabitur et vehicula nisl, eu congue dolor. Vivamus nec
+            hendrerit mi Nulla consequat tempor.
+          </p>
+        </div>
+        <button
+          class="download-btn"
+          onclick="window.open('https://www.facebook.com/yuh.wepo/videos/639843791063391', '_blank')"
+        >
+          <p class="btn-text">Download resume</p>
+        </button>
+        <table class="skills" style="width: 100%; padding: 80px 0">
+          <tr>
+            <td class="skill-title">
+              <button class="active about-btn">
+                <p class="skill-text"></p>
+                Core skills
+              </button>
+            </td>
+            <td class="skill-title">
+              <button class="active about-btn">
+                <p class="skill-text"></p>
+                Other skills
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="skill-btn">
+                <p class="skill-text">JavaScript</p>
+              </button>
+              <button class="skill-btn">
+                <p class="skill-text">Node.js</p>
+              </button>
+              <button class="skill-btn">
+                <p class="skill-text">Express.js</p>
+              </button>
+              <button class="skill-btn">
+                <p class="skill-text">MongoDB</p>
+              </button>
+              <button class="skill-btn">
+                <p class="skill-text">Vue.js</p>
+              </button>
+              <button class="skill-btn"><p class="skill-text">React</p></button>
+              <button class="skill-btn">
+                <p class="skill-text">Sequelize</p>
+              </button>
+              <button class="skill-btn">
+                <p class="skill-text">Github</p>
+              </button>
+              <button class="skill-btn"><p class="skill-text">HTML</p></button>
+            </td>
+            <td>
+              <button class="skill-btn">
+                <p class="skill-text">Storybook</p>
+              </button>
+              <button class="skill-btn"><p class="skill-text">PWAs</p></button>
+              <button class="skill-btn">
+                <p class="skill-text">Reponsive Web Design</p>
+              </button>
+              <button class="skill-btn"><p class="skill-text">React</p></button>
+              <button class="skill-btn">
+                <p class="skill-text">Vuetify</p>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="skill-title">
+              <button class="active about-btn">
+                <p class="skill-text"></p>
+                work experience
+              </button>
+            </td>
+            <td class="skill-title"></td>
+          </tr>
+          <tr>
+            <td class="we-year">2019-Present</td>
+            <td class="we-year">2018-2019</td>
+          </tr>
+          <tr>
+            <td class="we-location">Matrix Media Inc</td>
+            <td class="we-location">Lexind</td>
+          </tr>
+          <tr>
+            <td class="we-work">Full Stack developer</td>
+            <td class="we-work">Senior app developer</td>
+          </tr>
+          <tr>
+            <td class="we-text" style="vertical-align: top">
+              <p style="margin-bottom: 15px">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                interdum ante a porta blandit. Quisque velit tortor, ultricies
+                in quam ut, luctus convallis metus.
+              </p>
+              <ul style="margin-left: 15px">
+                <li style="margin-bottom: 15px">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  interdum ante a porta blandit.
+                </li>
+                <li style="margin-bottom: 15px">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+              </ul>
+            </td>
+            <td class="we-text">
+              <p style="margin-bottom: 15px">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                interdum ante a porta blandit. Quisque velit tortor, ultricies
+                in quam ut, luctus convallis metus.
+              </p>
+              <ul style="margin-left: 15px">
+                <li style="margin-bottom: 15px">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  interdum ante a porta blandit.
+                </li>
+                <li style="margin-bottom: 15px">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li style="margin-bottom: 15px">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  interdum ante a porta blandit.
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        <button class="active about-btn">
+          <p class="skill-text"></p>
+          latest works
+        </button>
+        <div class="work-box">
+          <div class="work-container">
+            <p class="work-title">Tripy mobile app</p>
+            <p class="work-content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti
+              nisi iusto aspernatur repellat quidem aliquam expedita? Laborum
+              enim ratione ipsa voluptatibus autem, neque pariatur veritatis,
+              harum nemo, optio quia ea?
+            </p>
+            <button
+              class="details-btn"
+              onclick="window.open('https://www.facebook.com/yuh.wepo', '_blank')"
+            >
+              <p class="btn-text">Details</p>
+            </button>
+          </div>
+          <img
+            class="img-work"
+            src="./assets/img/logo.jpg"
+            alt="yuhwepo-logo"
+          />
+        </div>
+        <div class="work-box">
+          <div class="work-container">
+            <p class="work-title">Hello mobile app</p>
+            <p class="work-content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti
+              nisi iusto aspernatur repellat quidem aliquam expedita? Laborum
+              enim ratione ipsa voluptatibus autem, neque pariatur veritatis,
+              harum nemo, optio quia ea?
+            </p>
+            <button
+              class="details-btn"
+              onclick="window.open('https://www.facebook.com/yuh.wepo', '_blank')"
+            >
+              <p class="btn-text">Details</p>
+            </button>
+          </div>
+          <img
+            class="img-work"
+            src="./assets/img/logo.jpg"
+            alt="yuhwepo-logo"
+          />
+        </div>
+        <div class="work-box">
+          <div class="work-container">
+            <p class="work-title">Cute Cookies app</p>
+            <p class="work-content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti
+              nisi iusto aspernatur repellat quidem aliquam expedita? Laborum
+              enim ratione ipsa voluptatibus autem, neque pariatur veritatis,
+              harum nemo, optio quia ea?
+            </p>
+            <button
+              class="details-btn"
+              onclick="window.open('https://www.facebook.com/yuh.wepo', '_blank')"
+            >
+              <p class="btn-text">Details</p>
+            </button>
+          </div>
+          <img
+            class="img-work"
+            src="./assets/img/logo.jpg"
+            alt="yuhwepo-logo"
+          />
         </div>
       </div>
       <div id="footer">
@@ -81,11 +278,11 @@
           class="talk-btn"
           onclick="window.open('https://www.facebook.com/yuh.wepo', '_blank')"
         >
-          Lets talk
+          <p class="btn-text">Lets talk</p>
         </button>
         <p id="cre">
           ©️ 2022 All right reserved. Free minimal bootstrap template by
-          Desingstub
+          Designstub
         </p>
       </div>
     </div>

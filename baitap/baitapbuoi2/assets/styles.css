@@ -41,36 +41,45 @@ html {
 
 #main {
   background-color: white;
-  display: block;
-  margin: 0 auto;
+  /* padding: 50px 220px 0 245px; */
 }
 
 #header {
-  height: 145px;
+  /* background-color: yellow; */
+  height: 41px;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 220px 0 245px;
+}
+
+#ybox {
   display: flex;
   justify-content: space-between;
 }
 
-#jbox {
-  width: 80px;
-  height: 80px;
+.ybox-logo {
+  width: 32px;
+  height: 33px;
   background-color: black;
-  border-radius: 16px;
-  margin-left: 25px;
-  margin-top: 30px;
+  border-radius: 4px;
+  margin-left: 4px;
+  margin-top: 4px;
+  color: white;
+  text-align: center;
+  line-height: 34px;
+  font-weight: bold;
 }
 
-#jbox p {
-  color: white;
-  font-size: 40px;
-  line-height: 80px;
-  text-align: center;
-  font-weight: bold;
+.ybox-text {
+  margin-left: 10px;
+  letter-spacing: 3px;
+  line-height: 43px;
+  font-size: 15px;
 }
 
 #contact {
   list-style-type: none;
-  margin-right: 10px;
+  margin-right: 2px;
   display: flex;
   align-items: center;
 }
@@ -81,9 +90,9 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  width: 50px;
-  margin: 15px;
+  height: 20px;
+  width: 20px;
+  margin: 5px;
 }
 
 #contact li:hover {
@@ -93,79 +102,217 @@ html {
 #contact li a {
   color: white;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 11px;
+  line-height: 20px;
 }
 
 #contact li a:hover {
   color: black;
 }
 
+#container {
+  padding: 0 220px 0 245px;
+  display: block;
+  margin: 0 auto;
+}
+
 #content {
-  margin: 60px 45px 0px;
+  margin: 55px 0px 0 4px;
+  display: flex;
+  /* justify-content: baseline; */
+}
+
+#picture img {
+  width: 421px;
 }
 
 #introduce {
-  margin-top: 75px;
+  margin-top: 12px;
+  max-width: 475px;
+  transform: translate(77px, 0px);
+  /* padding-right: 76px; */
 }
 
 #introduce p {
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 13.5px;
   font-weight: 500;
-  margin-bottom: 30px;
+  letter-spacing: 1px;
 }
 
 #introduce h1 {
-  font-style: bold;
-  font-size: 55px;
-  font-weight: 700;
+  margin-top: 40px;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 48px;
 }
 
 #exp {
   margin-top: 50px;
-  width: 70%;
+  width: 96%;
 }
 
 #exp #exp-number {
-  font-size: 55px;
+  font-size: 29px;
   font-weight: 800;
   color: #f26464;
 }
 
 #exp #exp-text {
-  font-size: 25px;
+  font-size: 13px;
   color: grey;
-  letter-spacing: 2.5px;
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 
 #about {
   margin-top: 50px;
+  margin-left: 4px;
 }
-.aboutme-btn {
-  font-size: 30px;
+.about-btn {
+  font-size: 13.5px;
   text-transform: uppercase;
   font-weight: 700;
-  word-spacing: 5px;
+  word-spacing: 1px;
   border: none;
   background-color: white;
-  width: 168px;
-  height: 50px;
   cursor: pointer;
   text-align: left;
 }
 
 .active {
-  border-bottom: solid 5px #f26464;
+  border-bottom: solid 2.5px #f26464;
 }
 
 #about p {
-  margin-top: 35px;
+  margin-top: 20px;
   text-transform: none;
-  font-size: 25px;
+  font-size: 19.5px;
   color: grey;
   font-weight: 400;
-  line-height: 50px;
-  word-spacing: 5px;
+  line-height: 40px;
+}
+
+.download-btn {
+  border-radius: 50px;
+
+  background-color: white;
+  border: solid 2px #f26464;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.download-btn:hover {
+  border-color: green;
+}
+
+.download-btn .btn-text:hover {
+  color: green;
+}
+
+.skills {
+}
+
+.skill-title {
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+
+.skill-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 7px 17px;
+}
+
+.skill-btn {
+  background-color: white;
+  border: solid 2px rgba(128, 128, 128, 0.2);
+  border-radius: 50px;
+  margin-bottom: 15px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.we-year {
+  font-size: 13px;
+  font-weight: 700;
+  padding-bottom: 5px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.we-location {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 5px;
+}
+
+.we-work {
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.we-text {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 400;
+  width: 450px;
+}
+
+td.we-text > p,
+td.we-text > ul {
+  width: 450px;
+}
+
+.work-box {
+  background-color: #f6f8fa;
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-container {
+  width: 500px;
+  height: 300px;
+  padding: 50px 0px 0px 50px;
+}
+
+.work-title {
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.work-content {
+  padding-bottom: 30px;
+  color: grey;
+  font-weight: 400;
+}
+
+.img-work {
+  padding-right: 60px;
+  padding-top: 40px;
+}
+.details-btn {
+  border-radius: 50px;
+  background-color: #f6f8fa;
+  border: solid 2px #f26464;
+  cursor: pointer;
+}
+
+.details-btn:hover {
+  border-color: blue;
+}
+
+.details-btn .btn-text:hover {
+  color: blue;
 }
 
 #footer {
@@ -178,8 +325,8 @@ html {
 }
 
 #touch {
-  padding-top: 100px;
-  font-size: 30px;
+  padding-top: 130px;
+  font-size: 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: grey;
@@ -187,42 +334,50 @@ html {
 }
 
 #talk {
-  padding-top: 25px;
+  padding-top: 20px;
   font-weight: 600;
-  font-size: 80px;
+  font-size: 40px;
 }
 
 #feel {
-  font-size: 35px;
+  font-size: 15px;
   word-spacing: 1px;
   margin-bottom: 40px;
   letter-spacing: 0.4px;
+  opacity: 0.9;
 }
 
 .talk-btn {
-  color: #f26464;
-  font-size: 25px;
-  text-transform: uppercase;
   border-radius: 50px;
-  width: 240px;
-  height: 80px;
-  letter-spacing: 5px;
   background-color: black;
-  border: solid 1px #f26464;
+  border: solid 2px #f26464;
   cursor: pointer;
-  line-height: 75px;
+}
+
+.btn-text {
+  font-size: 10px;
+  color: #f26464;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 12px 25px;
+  letter-spacing: 2px;
+  align-items: center;
 }
 
 .talk-btn:hover {
-  border: solid 1px yellow;
+  border-color: yellow;
+}
+
+.talk-btn .btn-text:hover {
   color: yellow;
 }
 
 #cre {
-  padding-top: 50px;
-  font-size: 25px;
+  padding-top: 80px;
+  font-size: 13px;
   color: grey;
   padding-bottom: 100px;
   font-weight: 500;
   letter-spacing: 0.4px;
+  opacity: 0.9;
 }
