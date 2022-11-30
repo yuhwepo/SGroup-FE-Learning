@@ -40,12 +40,9 @@ html {
 }
 
 #main {
-  background-color: white;
-  /* padding: 50px 220px 0 245px; */
 }
 
 #header {
-  /* background-color: yellow; */
   height: 41px;
   display: flex;
   justify-content: space-between;
@@ -119,7 +116,6 @@ html {
 #content {
   margin: 55px 0px 0 4px;
   display: flex;
-  /* justify-content: baseline; */
 }
 
 #picture img {
@@ -130,7 +126,6 @@ html {
   margin-top: 12px;
   max-width: 475px;
   transform: translate(77px, 0px);
-  /* padding-right: 76px; */
 }
 
 #introduce p {
@@ -263,9 +258,18 @@ html {
   width: 450px;
 }
 
+td.we-text > ul {
+  margin-left: 15px;
+}
+
 td.we-text > p,
 td.we-text > ul {
   width: 450px;
+}
+
+td.we-text > p, 
+td.we-text > li {
+  margin-bottom: 15px;
 }
 
 .work-box {
