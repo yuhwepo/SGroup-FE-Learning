@@ -48,7 +48,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
   display: block;
   margin: 0px auto;
-  transform: translate(-55px, 55px);
+  transform: translate(0, 55px);
   transition: all 0.5s ease;
   padding: 22px 25px;
 }
