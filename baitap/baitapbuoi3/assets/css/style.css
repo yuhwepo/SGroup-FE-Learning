@@ -47,15 +47,15 @@ body {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   display: block;
-  margin: 0px auto;
+  /* margin: 0px auto; */
+  margin-left: 658px;
   transform: translate(0, 55px);
-  transition: all 0.5s ease;
+  transition: 0s;
   padding: 22px 25px;
 }
 
 .sidebar.active {
   width: 87px;
-  transition: all 0.5s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,11 +111,6 @@ body {
 .sidebar.active .sb-nav {
   padding-bottom: 15px;
   margin-top: 10px;
-}
-
-.sidebar .nav-content ul li .dashboard {
-  /* opacity: 0; */
-  display: none;
 }
 
 .sidebar ul li .dashboard {
