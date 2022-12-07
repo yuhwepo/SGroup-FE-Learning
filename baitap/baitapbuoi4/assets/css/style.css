@@ -1,0 +1,51 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+body {
+  min-height: 100vh;
+}
+
+.main {
+  position: relative;
+  display: flex;
+}
+
+.inear {
+  width: 30rem;
+  margin-left: 22rem;
+  margin-top: 9rem;
+  transform: translateY(-50%);
+  opacity: 0;
+  animation: transitionIn 2s 1 linear forwards;
+}
+
+.headphone {
+  width: 30rem;
+  margin-left: 48rem;
+  margin-top: 12rem;
+  position: absolute;
+  transform: translateY(50%);
+  opacity: 0;
+  animation: transitionIn 2s 1 linear forwards;
+}
+
+@keyframes transitionIn {
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
