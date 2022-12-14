@@ -1,0 +1,461 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+body {
+  min-height: 100vh;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(24, 25, 26);
+}
+
+.mt-2 {
+  margin-top: 2px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+#header {
+  background-color: rgb(36, 37, 38);
+  width: 100%;
+  height: 56px;
+  border-bottom: 2px solid rgb(57, 58, 59);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 99;
+}
+
+#header .fb-logo-search {
+  display: flex;
+}
+
+#header .fb-logo-search .fb-logo {
+  fill: white;
+}
+
+#header .fb-logo-search .search-btn {
+  background-color: rgb(58, 59, 60);
+  width: 40px;
+  height: 40px;
+  border-radius: 100rem;
+  border: none;
+  color: rgb(184, 187, 191);
+  font-size: 14px;
+}
+
+#header .account-manager {
+  display: flex;
+  padding-right: 16px;
+}
+#header .account-manager .mess-noti-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 100rem;
+  margin-right: 8px;
+  background-color: rgb(58, 59, 60);
+  border: none;
+  color: rgb(231, 233, 237);
+  font-size: 17px;
+}
+
+#header .account-manager .account {
+  position: relative;
+}
+
+#header .account-manager .account img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100rem;
+}
+
+#header .account-manager .account .arrow-down {
+  position: absolute;
+  font-size: 9px;
+  color: rgb(231, 233, 237);
+  border: 3px solid rgb(36, 37, 38);
+  background-color: rgb(58, 59, 60);
+  width: 17px;
+  height: 17px;
+  border-radius: 100rem;
+  transform: translate(25px, -14px);
+  display: flex;
+  justify-content: center;
+}
+
+#nav {
+  background-color: rgb(36, 37, 38);
+  width: 59px;
+  height: 100vh;
+  border-right: 1px solid rgb(57, 58, 59);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 56px;
+  z-index: 99;
+}
+
+#nav .home-avt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 104px;
+  padding: 16px 0 8px;
+}
+
+#nav .home-avt .home-icon {
+  font-size: 19px;
+  color: rgb(231, 233, 237);
+  padding: 8px 20px;
+}
+
+#nav .home-avt .avt-pic {
+  padding: 15px 18px;
+  /* border-left: 6px solid rgb(46, 137, 255);
+  border-radius: 5px; */
+}
+
+#nav .home-avt .avt-pic img {
+  width: 24px;
+  height: 24px;
+  border-radius: 100rem;
+}
+
+#nav .society {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#nav .society .menu-btn {
+  color: rgb(231, 233, 237);
+  background-color: rgb(58, 59, 60);
+  border: none;
+  width: 33px;
+  height: 33px;
+  border-radius: 100rem;
+  font-size: 15px;
+  margin: 15px 2px;
+}
+
+#nav .society .nav-icon {
+  padding-bottom: 20px;
+  font-size: 17px;
+  color: rgb(48, 123, 216);
+}
+
+#content {
+  width: 100vw;
+  /* height: 686px; */
+  background-color: rgb(36, 37, 38);
+  left: 30px;
+  top: 55px;
+  position: fixed;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#content .bg-cover {
+  width: 1095px;
+  height: 406px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  /* background-position: center center;
+  background-size: cover;
+  background-image: url("./img/cover.jpg"); */
+  background: url("./img/cover.jpg") center center / cover;
+  position: relative;
+}
+
+#content .bg-cover .change-cover {
+  padding: 9px 15px;
+  margin: 15px 30px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  border: none;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+#content .bg-cover .change-cover > p {
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 5px;
+}
+
+#content .profile {
+  display: flex;
+  /* justify-content: flex-start;
+  flex-direction: row;
+  position: relative; */
+  width: 1095px;
+  padding: 20px 30px;
+  height: 160px;
+  position: relative;
+}
+#content .profile .profile-avt {
+  background-image: url("./img/avatar.jpg");
+  width: 178px;
+  height: 178px;
+  border-radius: 100rem;
+  background-size: cover;
+  border: 5px solid rgb(36, 37, 38);
+  position: relative;
+  transform: translateY(-30%);
+}
+
+#content .profile .profile-avt .shot-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 100rem;
+  border: none;
+  font-size: 20px;
+  color: rgb(231, 233, 237);
+  background-color: rgb(58, 59, 60);
+  margin: 6px 8px;
+}
+#content .profile .profile-info-gr {
+  display: flex;
+  justify-content: space-between;
+}
+#content .profile .profile-info {
+  padding: 0 0 25px 15px;
+}
+
+#content .profile .profile-info > p:nth-child(1) {
+  font-size: 32px;
+  color: rgb(228, 230, 235);
+}
+
+#content .profile .profile-info > p > b {
+  font-weight: 700;
+}
+
+#content .profile .profile-info > p:nth-child(2) {
+  padding-bottom: 10px;
+  color: rgb(176, 179, 184);
+  font-weight: 500;
+}
+
+#content .profile .profile-info .friend-avatars {
+  display: inline-flex;
+  flex-direction: row-reverse;
+}
+
+#content .profile .profile-info .friend-avatars .avatar {
+  position: relative;
+}
+
+#content .profile .profile-info .friend-avatars .avatar:not(:last-child) {
+  margin-left: -10px;
+}
+
+#content .profile .profile-info .friend-avatars .avatar:first-child {
+  filter: brightness(0.7);
+  color: rgb(184, 187, 191);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+#content .profile .profile-info .friend-avatars .avatar img {
+  width: 37px;
+  height: 37px;
+  border-radius: 100rem;
+  border: 3px solid rgb(36, 37, 38);
+}
+
+#content .profile .profile-reel-change {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 92px;
+  height: 44px;
+  position: absolute;
+  right: 30px;
+  bottom: 28px;
+}
+
+#content .profile .profile-reel-change .reel-btn,
+#content .profile .profile-reel-change .change-btn {
+  display: flex;
+  align-items: center;
+  padding: 9px 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+#content .profile .profile-reel-change .reel-btn {
+  background-color: #2374e1;
+  color: white;
+}
+
+#content .profile .profile-reel-change .change-btn {
+  color: rgb(231, 233, 237);
+  background-color: rgb(58, 59, 60);
+  margin-left: 8px;
+}
+
+#content .profile .profile-reel-change .reel-btn > p,
+#content .profile .profile-reel-change .change-btn > p {
+  padding-left: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#content .line {
+  width: 1035px;
+  height: 1px;
+  background-color: rgb(62, 63, 65);
+  opacity: 0.5;
+}
+
+#content .profile-list {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#content .profile-list ul {
+  list-style: none;
+  display: flex;
+  width: 1095px;
+  padding: 0 30px;
+}
+
+#content .profile-list ul li {
+  padding: 20px 15px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #9fa2a6;
+}
+
+#content .profile-list ul li:first-child {
+  color: rgb(46, 137, 255);
+  border-bottom: 4px solid rgb(46, 137, 255);
+}
+
+#content .profile-list .threedot-btn {
+  width: 48px;
+  height: 36px;
+  border-radius: 5px;
+  border: none;
+  color: rgb(231, 233, 237);
+  background-color: rgb(58, 59, 60);
+  font-size: 12px;
+  position: absolute;
+  right: 30px;
+}
+
+.new-message,
+.message-avt {
+  width: 48px;
+  height: 48px;
+  border-radius: 100rem;
+  position: absolute;
+}
+.new-message {
+  color: rgb(231, 233, 237);
+  background-color: rgb(72, 73, 75);
+  right: 15px;
+  bottom: 15px;
+  text-align: center;
+  line-height: 48px;
+  font-size: 20px;
+}
+
+.message-avt {
+  background: url("./img/avatar.jpg") center center / cover;
+  right: 15px;
+  bottom: 75px;
+}
+
+.message-avt .tooltiptext {
+  width: 250px;
+  height: 80px;
+  background-color: rgb(44, 43, 43);
+  color: white;
+  border-radius: 6px;
+  padding: 10px 10px;
+  position: absolute;
+  transform: translate(-107%, -40%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  visibility: hidden;
+}
+
+.message-avt .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: 5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent rgb(44, 43, 43);
+}
+
+.message-avt:hover .tooltiptext {
+  visibility: visible;
+}
+
+.message-avt .tooltiptext .tooltip-text-name {
+  font-size: 15px;
+  color: rgb(231, 233, 237);
+  font-weight: 600;
+}
+
+.message-avt .tooltiptext .tooltip-text-content {
+  color: rgb(140, 143, 147);
+  font-size: 15px;
+}
+
+.message-avt .quit-message {
+  background-color: rgb(44, 43, 43);
+  color: rgb(231, 233, 237);
+  width: 22px;
+  height: 22px;
+  border-radius: 100rem;
+  text-align: center;
+  font-size: 13px;
+  line-height: 22px;
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  visibility: hidden;
+}
+
+.message-avt:hover .quit-message {
+  visibility: visible;
+}
