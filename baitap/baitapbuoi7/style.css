@@ -1,0 +1,157 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #2f3238;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Honey effect */
+
+.effect-honey {
+  width: 500px;
+  height: 100%;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.effect-honey-img {
+  width: 500px;
+}
+
+.effect-honey__text {
+  text-transform: uppercase;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  word-spacing: -4px;
+  padding: 50px;
+  font-size: 30px;
+  transform: translateY(-10px);
+  transition: all 0.3s linear;
+  /* z-index: 99; */
+}
+
+.effect-honey__text--boldsub {
+  font-weight: 900;
+}
+.effect-honey__text--normalsub {
+  visibility: hidden;
+  opacity: 0;
+  /* display: none; */
+}
+
+.effect-honey:hover .effect-honey-img {
+  filter: brightness(80%);
+}
+
+.effect-honey:hover .effect-honey__text {
+  transform: translateY(20px);
+}
+
+.effect-honey:hover .effect-honey__text--normalsub {
+  visibility: visible;
+  opacity: 1;
+}
+
+.effect-honey__box {
+  background-color: white;
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.3s linear;
+}
+
+.effect-honey:hover .effect-honey__box {
+  height: 15px;
+}
+
+/* lily effect */
+
+.effect-lily {
+  /* width: 600px; */
+  position: relative;
+  overflow: hidden;
+}
+
+.effect-lily-img {
+  width: 500px;
+  scale: 1.2;
+  transform: translateX(-30px);
+  transition: all 0.3s ease-in;
+}
+
+.effect-lily__text {
+  text-transform: uppercase;
+  font-size: 30px;
+  word-spacing: -6px;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  padding: 50px;
+  z-index: 1;
+  transition: all 0.3s ease-in;
+}
+
+.effect-lily__text--boldsub {
+  font-weight: 800;
+}
+
+.effect-lily__text--normalsub {
+  font-size: 15px;
+  word-spacing: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.effect-lily__box {
+  width: 100%;
+  height: 100%;
+  background-color: #3085a3;
+  position: absolute;
+  top: 0;
+  opacity: 0.3;
+  transition: all 0.3s ease-in;
+}
+
+.effect-lily:hover .effect-lily-img {
+  transform: none;
+}
+
+.effect-lily:hover .effect-lily__text {
+  transform: translateY(-15px);
+}
+
+.effect-lily:hover .effect-lily__text--normalsub {
+  visibility: visible;
+  opacity: 0.9;
+  transform: translateY(0);
+}
+
+.effect-lily:hover .effect-lily__box {
+  opacity: 0;
+}
