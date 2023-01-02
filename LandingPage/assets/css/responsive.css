@@ -1,0 +1,337 @@
+@media (max-width: 93.75em) {
+  .grid {
+    width: 1250px;
+  }
+
+  .navbar__logo img {
+    max-height: 6.5rem;
+  }
+
+  .navbar__list {
+    margin-left: 10rem;
+  }
+
+  .navbar__list-item + .navbar__list-item {
+    margin-left: 4rem;
+  }
+
+  .navbar__list-item-link {
+    padding: 3.8rem 0;
+  }
+
+  .navbar__action-btn {
+    margin-left: 3.5rem;
+    padding-left: 3.5rem;
+  }
+
+  .navbar__action-btn::before {
+    height: 2rem;
+    opacity: 0.4;
+  }
+
+  .navbar__action-btn .btn {
+    padding: 1.6rem 3.5rem;
+  }
+
+  .about__container-content .btn {
+    font-size: 1.3rem;
+    padding: 1.7rem 4rem;
+  }
+
+  .nav-content .btn {
+    min-width: 16rem;
+  }
+}
+
+@media (max-width: 74.99875em) {
+  .grid__container {
+    width: 96rem;
+  }
+
+  .navbar__list {
+    margin-left: 6rem;
+  }
+
+  .navbar__action-lang {
+    display: none;
+  }
+
+  .navbar__action-btn {
+    margin-left: 0;
+    padding-left: 2rem;
+  }
+
+  .banner__container-content-text,
+  .nav-title {
+    font-size: 4.5rem;
+  }
+
+  .banner__progress {
+    min-width: 71rem;
+  }
+
+  .banner__countdown {
+    margin-top: 6rem;
+  }
+
+  .title {
+    font-size: 3.4rem;
+  }
+
+  .about__container-content-text {
+    width: 90%;
+  }
+
+  .about-img {
+    padding-left: 2rem;
+  }
+
+  .about-img--left {
+    top: 0;
+    left: 0;
+  }
+
+  .about-content {
+    margin-left: 3rem;
+  }
+
+  .partner__box ul {
+    justify-content: center;
+  }
+
+  .partner__box-img {
+    width: 25%;
+  }
+
+  .chart__inner {
+    padding: 0 0;
+  }
+
+  .chart-content {
+    width: 80%;
+  }
+
+  .nav-title {
+    margin-bottom: 2rem;
+  }
+
+  .chart__order {
+    min-width: 45rem;
+  }
+
+  .chart-wrap {
+    padding: 6rem 3rem;
+  }
+}
+
+@media (max-width: 61.99875em) {
+  .grid,
+  .grid__container {
+    width: 72rem;
+  }
+
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  .navbar__list {
+    display: none;
+  }
+
+  .navbar__action-btn::before {
+    display: none;
+  }
+
+  .mobile-nav-toggler {
+    color: #fff;
+    font-size: 3rem;
+    margin-left: 4rem;
+  }
+
+  .banner__shape--one {
+    max-width: 12rem;
+    top: 17%;
+    left: 0;
+  }
+
+  .banner__shape--three {
+    display: none;
+  }
+
+  .banner__countdown-time {
+    column-gap: 2.9rem;
+  }
+
+  .time-count {
+    max-width: 14rem;
+    max-height: 8.5rem;
+  }
+
+  .about__container {
+    flex-direction: column;
+  }
+
+  .about__container-img {
+    width: 100%;
+    text-align: center;
+    padding: 0 0;
+  }
+
+  .about-img {
+    padding-left: 0;
+    display: inline-block;
+    margin-bottom: 5rem;
+  }
+
+  .about-img--left {
+    left: 6rem;
+    top: 4rem;
+  }
+
+  .about__container-content {
+    width: 100%;
+    padding: 0 0;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .about__container-content-text {
+    width: 100%;
+  }
+
+  .partner__box-img {
+    width: 33.33%;
+  }
+
+  .chart__inner-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chart__order {
+    width: 87%;
+  }
+
+  .chart-wrap {
+    padding: 6rem 4.5rem;
+  }
+
+  .chart-info {
+    width: 88%;
+  }
+
+  .chart-content {
+    margin-top: 5rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 47.99875em) {
+  .grid,
+  .grid__container {
+    width: 54rem;
+  }
+
+  .navbar__action-btn .btn {
+    display: none;
+  }
+
+  .banner {
+    padding-top: 7rem;
+  }
+
+  .banner__shape--one {
+    max-width: 10rem;
+  }
+
+  .banner__shape--two {
+    top: 34%;
+  }
+
+  .banner__container-content-text {
+    font-size: 3rem;
+  }
+
+  .banner__progress {
+    min-width: 51rem;
+    margin-top: 2.5rem;
+  }
+
+  .banner__progress-title {
+    margin: 0;
+  }
+
+  .banner__countdown {
+    margin-top: 4rem;
+  }
+
+  .banner__countdown-time {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    column-gap: 1rem;
+  }
+
+  .about-img--left {
+    display: none;
+  }
+
+  .about-content {
+    margin-left: 0;
+  }
+
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .partner__box-img {
+    width: 50%;
+  }
+
+  .choose-box {
+    width: 26.5rem;
+  }
+
+  .choose-item {
+    padding: 5rem 3.5rem;
+  }
+
+  .chart__order,
+  .chart-info {
+    width: 100%;
+  }
+}
+
+@media (min-width: 36em) and (max-width: 47.9375em) {
+  .banner__container-content-text {
+    font-size: 3.2rem;
+  }
+
+  .title {
+    font-size: 3.6rem;
+  }
+}
+
+@media (max-width: 35.99875em) {
+  .banner__progress {
+    min-width: 36.7rem;
+  }
+
+  /* .banner__countdown-time {
+    max-width: 52.8rem;
+  } */
+
+  .partner__box-img {
+    width: 100%;
+  }
+
+  .chart-wrap ul li {
+    width: 100%;
+  }
+
+  .chart__order {
+    max-width: 35.8rem;
+  }
+}
