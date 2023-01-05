@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="box">
+        <div class="box__container">
+          <h1 class="title">Calculator</h1>
+          <input
+            type="number"
+            name="soa"
+            id="soa"
+            onchange="nhanDuLieuA()"
+            placeholder="Nhập số thứ nhất"
+          />
+          <input
+            type="number"
+            name="sob"
+            id="sob"
+            onchange="nhanDuLieuB()"
+            placeholder="Nhập số thứ hai"
+          />
+          <input
+            type="number"
+            name="soc"
+            id="soc"
+            onchange="nhanDuLieuC()"
+            placeholder="Nhập số thứ ba"
+          />
+          <div class="btn-container">
+            <button onclick="sochanle()" class="btn">Số chẵn lẻ</button>
+            <button onclick="findMax()" class="btn">Tìm max</button>
+            <button onclick="giaiThua()" class="btn--mid">N!</button>
+            <button onclick="inSoChan()" class="btn">In Số Chẵn</button>
+            <button onclick="tongChanMang()" class="btn">Tổng Chẵn</button>
+          </div>
+          <div class="box__container__content">
+            <p id="ketqua" class="content"></p>
+            <p id="ketqua2" class="content"></p>
+            <p id="ketqua3" class="content"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

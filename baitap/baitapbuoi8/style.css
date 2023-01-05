@@ -1,0 +1,133 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 500px;
+  height: 600px;
+  background-color: grey;
+  border: 1px solid black;
+  margin: 20px;
+}
+
+.box__container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: space-around; */
+  width: 400px;
+  height: 100%;
+  margin: auto;
+}
+
+.title {
+  text-transform: uppercase;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.box__container__content {
+  width: 100%;
+  height: 25%;
+  background-color: black;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content {
+  color: white;
+}
+
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  row-gap: 20px;
+  margin-top: 20px;
+}
+
+.btn--mid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 50px;
+  margin-top: 0;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  background-color: green;
+  cursor: pointer;
+  transition: 0.3s linear;
+  /* margin-top: 20px; */
+  min-width: 150px;
+  margin-right: 10px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* button + button {
+  margin-right: 10px;
+} */
+
+button:nth-child(2) {
+  background-color: red;
+}
+button:nth-child(3) {
+  background-color: yellow;
+  color: black;
+}
+
+button:nth-child(4) {
+  background-color: cyan;
+  color: black;
+}
+button:nth-child(5) {
+  background-color: purple;
+  color: white;
+}
