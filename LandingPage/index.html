@@ -25,10 +25,11 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <script defer src="./assets/scripts/main.js"></script>
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
+    <header id="header">
       <div class="grid">
         <nav class="navbar pl-15 pr-15">
           <div class="navbar__container">
@@ -37,30 +38,30 @@
             </a>
             <ul class="navbar__list">
               <li class="navbar__list-item">
-                <a href="#" class="navbar__list-item-link">Home</a>
+                <a href="#banner" class="navbar__list-item-link">Home</a>
                 <div class="navbar__list-item-sub">
                   <a href="" class="navbar__list-item-sub-text">Home one</a>
                   <a href="" class="navbar__list-item-sub-text">Home two</a>
                 </div>
               </li>
               <li class="navbar__list-item">
-                <a href="#" class="navbar__list-item-link">About us</a>
+                <a href="#about" class="navbar__list-item-link">About us</a>
               </li>
               <li class="navbar__list-item">
-                <a href="#" class="navbar__list-item-link">Sales</a>
+                <a href="#chart" class="navbar__list-item-link">Sales</a>
               </li>
               <li class="navbar__list-item">
-                <a href="#" class="navbar__list-item-link">Roadmap</a>
+                <a href="#roadmap" class="navbar__list-item-link">Roadmap</a>
               </li>
               <li class="navbar__list-item">
-                <a href="#" class="navbar__list-item-link">Blog</a>
+                <a href="#team" class="navbar__list-item-link">Blog</a>
                 <div class="navbar__list-item-sub">
                   <a href="" class="navbar__list-item-sub-text">our blog</a>
                   <a href="" class="navbar__list-item-sub-text">blog details</a>
                 </div>
               </li>
               <li class="navbar__list-item">
-                <a href="#" class="navbar__list-item-link">Contact us</a>
+                <a href="#contact" class="navbar__list-item-link">Contact us</a>
               </li>
             </ul>
           </div>
@@ -78,11 +79,72 @@
             <li class="navbar__action-btn">
               <a href="#" class="btn">Buy Now</a>
             </li>
-            <div class="mobile-nav-toggler">
+            <div id="mobile-menu-btn" class="mobile-nav-toggler">
               <i class="fa-solid fa-bars"></i>
             </div>
           </ul>
           <!-- Mobile Menu -->
+          <div class="mobile-menu">
+            <nav class="menu-box">
+              <div class="close-btn">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <div class="nav-logo">
+                <a href="index.html">
+                  <img src="./assets/img/logo/logo.png" alt="" />
+                </a>
+              </div>
+              <div class="menu-outer">
+                <ul class="navigation">
+                  <li class="menu-item-has-children">
+                    <a href="" class="section-link">Home</a>
+                    <ul class="sub-menu">
+                      <li><a href="">Home One</a></li>
+                      <li><a href="">Home Two</a></li>
+                    </ul>
+                    <div class="dropdown-btn">
+                      <span class="fa-solid fa-chevron-down"></span>
+                    </div>
+                  </li>
+                  <li><a href="" class="section-link">About us</a></li>
+                  <li><a href="" class="section-link">Sales</a></li>
+                  <li><a href="" class="section-link">Roadmap</a></li>
+                  <li class="menu-item-has-children">
+                    <a href="#header" class="section-link">Blog</a>
+                    <ul class="sub-menu">
+                      <li><a href="">Our Blog</a></li>
+                      <li><a href="">Blog Details</a></li>
+                    </ul>
+                    <div class="dropdown-btn">
+                      <span class="fa-solid fa-chevron-down"></span>
+                    </div>
+                  </li>
+                  <li><a href="" class="section-link">Contact us</a></li>
+                </ul>
+              </div>
+              <div class="social-links">
+                <ul class="clearfix">
+                  <li>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="menu-backdrop"></div>
+          <!-- EndMobile Menu -->
         </nav>
       </div>
     </header>
@@ -90,7 +152,7 @@
     <!-- Main -->
     <main class="main">
       <!-- Banner -->
-      <section class="banner">
+      <section id="banner" class="banner">
         <div class="banner__shape">
           <img
             src="./assets/img/banner/banner_shape01.png"
@@ -148,20 +210,20 @@
           <div class="banner__countdown">
             <p class="banner__countdown-title">ICO will start in..</p>
             <div class="banner__countdown-time">
-              <div class="time-count time-count--day">
-                23
+              <div class="time-count">
+                <span class="time-count--day"></span>
                 <span class="time-count--text">Days</span>
               </div>
-              <div class="time-count time-count--hour">
-                09
+              <div class="time-count">
+                <span class="time-count--hour"></span>
                 <span class="time-count--text">Hour</span>
               </div>
-              <div class="time-count time-count--min">
-                20
+              <div class="time-count">
+                <span class="time-count--min"></span>
                 <span class="time-count--text">Minute</span>
               </div>
-              <div class="time-count time-count--sec">
-                02
+              <div class="time-count">
+                <span class="time-count--sec">02</span>
                 <span class="time-count--text">Second</span>
               </div>
             </div>
@@ -170,12 +232,12 @@
       </section>
       <!-- End Banner -->
       <!-- About -->
-      <section class="about mb-130">
+      <section id="about" class="about mb-130">
         <div
-          class="about__container grid__container pl-15 pr-15 flex-row align-items-center"
+          class="about__container grid__container pl-15 pr-15 grid__row align-items-center"
         >
           <div class="about__container-img">
-            <div class="about-img">
+            <div class="about-img no-animation">
               <img src="./assets/img/images/about_img01.png" alt="" />
               <img
                 src="./assets/img/images/about_img02.png"
@@ -185,7 +247,7 @@
             </div>
           </div>
           <div class="about__container-content">
-            <div class="about-content">
+            <div class="about-content no-animation">
               <div class="section-title">
                 <span class="subtitle">Who we are</span>
                 <p class="title">
@@ -285,7 +347,7 @@
                 </div>
                 <div class="choose-content">
                   <h2 class="choose-content-title">
-                    <a href="#">Mobile payment make easy</a>
+                    <a href="#">Lifetime free transaction</a>
                   </h2>
                   <p class="choose-content-text">
                     Add new, trending and rare artwork to your collection.
@@ -300,7 +362,11 @@
                 </div>
                 <div class="choose-content">
                   <h2 class="choose-content-title">
-                    <a href="#">Mobile payment make easy</a>
+                    <a href="#">
+                      Protect the
+                      <br />
+                      identity
+                    </a>
                   </h2>
                   <p class="choose-content-text">
                     Add new, trending and rare artwork to your collection.
@@ -315,7 +381,7 @@
                 </div>
                 <div class="choose-content">
                   <h2 class="choose-content-title">
-                    <a href="#">Mobile payment make easy</a>
+                    <a href="#">Sercurity & control over money</a>
                   </h2>
                   <p class="choose-content-text">
                     Add new, trending and rare artwork to your collection.
@@ -329,14 +395,11 @@
       </section>
       <!-- End Choose -->
       <!-- Chart -->
-      <section
-        class="chart chart-bg"
-        style="position: relative; z-index: 0; background-image: none"
-      >
+      <section id="chart" class="chart chart-bg">
         <div class="chart__container grid__container">
           <div class="chart__inner">
             <div class="chart__inner-container">
-              <div class="chart__order pl-15 pr-15">
+              <div class="chart__order no-animation pl-15 pr-15">
                 <div class="chart-wrap">
                   <img src="./assets/img/images/chart.png" alt="" />
                   <ul>
@@ -349,8 +412,8 @@
                   </ul>
                 </div>
               </div>
-              <div class="chart-info pl-15 pr-15">
-                <div class="chart-content">
+              <div class="chart-info pl-15 pr-15 no-animation">
+                <div class="chart-content no-animation">
                   <ul class="chart-nav">
                     <li class="chart-nav-item">
                       <button class="chart-nav-link">funding allocation</button>
@@ -375,7 +438,559 @@
         </div>
       </section>
       <!-- End Chart -->
+      <!-- Area -->
+      <div class="area-bg">
+        <!-- Roadmap -->
+        <section id="roadmap" class="roadmap-area pt-130 pb-130">
+          <div class="grid__container custom-grid__container">
+            <div class="grid__row justify-content-center">
+              <div
+                class="section-title grid__section flex-col align-items-center mb-60"
+              >
+                <span class="subtitle"> Our roadmap </span>
+                <p class="title">
+                  Bigtech Strategy And <br />Project
+                  <span class="title--cyan">Plan</span>
+                </p>
+              </div>
+            </div>
+            <div class="bt-roadmap-wrap pl-15 pr-15">
+              <div class="bt-roadmap-item">
+                <span class="roadmap-title">Mid 0f Q4 2021</span>
+                <div class="roadmap-content">
+                  <span class="dot"></span>
+                  <h4 class="content-title">Concept</h4>
+                  <span>EVM support for parthians</span>
+                  <span>SubQuery Academy</span>
+                  <span>Proof of indexing</span>
+                </div>
+              </div>
+              <div class="bt-roadmap-item">
+                <span class="roadmap-title">Mid 0f Q4 2021</span>
+                <div class="roadmap-content">
+                  <span class="dot"></span>
+                  <h4 class="content-title">Research</h4>
+                  <span>SubQuery Builders/Grants Program</span>
+                  <span>SQT Network contract internal MVP</span>
+                  <span>Coordinator and client SDK</span>
+                </div>
+              </div>
+              <div class="bt-roadmap-item">
+                <span class="roadmap-title">Mid 0f Q4 2021</span>
+                <div class="roadmap-content">
+                  <span class="dot"></span>
+                  <h4 class="content-title">App Beta Test</h4>
+                  <span>Public testnet launch</span>
+                  <span>SubQuery Network Explorer and dApp</span>
+                  <span>Point-in-time indexing</span>
+                </div>
+              </div>
+              <div class="bt-roadmap-item">
+                <span class="roadmap-title">Mid 0f Q4 2021</span>
+                <div class="roadmap-content">
+                  <span class="dot"></span>
+                  <h4 class="content-title">Token Test</h4>
+                  <span>SQT token generation event</span>
+                  <span>Public incentivize testnet launch</span>
+                  <span>Data traffic insights and reporting</span>
+                </div>
+              </div>
+              <div class="bt-roadmap-item">
+                <span class="roadmap-title">Mid 0f Q4 2021</span>
+                <div class="roadmap-content">
+                  <span class="dot"></span>
+                  <h4 class="content-title">Alpha Test</h4>
+                  <span>Launch of the SubQuery Foundation</span>
+                  <span>Finalise research for other Layer-1 chains</span>
+                  <span>Liquidity mining program</span>
+                </div>
+              </div>
+              <div class="bt-roadmap-item">
+                <span class="roadmap-title">Mid 0f Q4 2021</span>
+                <div class="roadmap-content">
+                  <span class="dot"></span>
+                  <h4 class="content-title">Benefits</h4>
+                  <span>Mainnet launch</span>
+                  <span>Centralized exchange launch</span>
+                  <span>Public incentivize testnet</span>
+                </div>
+              </div>
+              <div class="bt-roadmap-item">
+                <span class="roadmap-title">Mid 0f Q4 2021</span>
+                <div class="roadmap-content">
+                  <span class="dot"></span>
+                  <h4 class="content-title">Operational</h4>
+                  <span>SubQuery launches its</span>
+                  <span>own parthian</span>
+                  <span>SubQuery Foundation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Roadmap -->
+        <!-- Document -->
+        <section class="document pt-60">
+          <div class="grid__container pl-15 pr-15">
+            <div class="grid__row justify-content-center">
+              <div class="document__container--59 pl-15 pr-15">
+                <div class="document-img text-center no-animation">
+                  <img src="./assets/img/images/document_img.png" alt="" />
+                </div>
+              </div>
+              <div class="document__container--41 pl-15 pr-15">
+                <div class="document-content no-animation mt-50">
+                  <div class="section-title mb-35">
+                    <span class="subtitle">Whitepaper</span>
+                    <h2 class="title">
+                      Read Bigtech
+                      <span class="title--cyan">Documents</span>
+                    </h2>
+                  </div>
+                  <ul class="document-list">
+                    <li>White paper</li>
+                    <li>Privacy & Policy</li>
+                    <li>terms of coin sale</li>
+                    <li>one pager</li>
+                  </ul>
+                  <a href="#" class="btn">Download Doc</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Document -->
+      </div>
+      <!-- End Area -->
+      <!-- TEAM -->
+      <section id="team" class="team pt-130">
+        <div class="grid__container pl-15 pr-15">
+          <div class="grid__row justify-content-center">
+            <div class="grid__section">
+              <div class="section-title text-center mb-70">
+                <span class="subtitle">Our team</span>
+                <h2 class="title">
+                  The leadership
+                  <br />
+                  <span class="title--cyan">Team</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="grid__row justify-content-center">
+            <div class="team__container">
+              <div class="team-item">
+                <div class="team-thumb">
+                  <img src="./assets/img/team/team_img01.png" alt="" />
+                </div>
+                <div class="team-content">
+                  <h2 class="title">Cameron Williamson</h2>
+                  <span>Founder & CO</span>
+                  <ul class="team-social">
+                    <li>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="team__container">
+              <div class="team-item">
+                <div class="team-thumb">
+                  <img src="./assets/img/team/team_img02.png" alt="" />
+                </div>
+                <div class="team-content">
+                  <h2 class="title">Eleanor Pena</h2>
+                  <span>Head of Design</span>
+                  <ul class="team-social">
+                    <li>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="team__container">
+              <div class="team-item">
+                <div class="team-thumb">
+                  <img src="./assets/img/team/team_img03.png" alt="" />
+                </div>
+                <div class="team-content">
+                  <h2 class="title">Bessie Cooper</h2>
+                  <span>Vp People</span>
+                  <ul class="team-social">
+                    <li>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="team__container">
+              <div class="team-item">
+                <div class="team-thumb">
+                  <img src="./assets/img/team/team_img04.png" alt="" />
+                </div>
+                <div class="team-content">
+                  <h2 class="title">Darlene Robertson</h2>
+                  <span>Product Manager</span>
+                  <ul class="team-social">
+                    <li>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="team__container">
+              <div class="team-item">
+                <div class="team-thumb">
+                  <img src="./assets/img/team/team_img05.png" alt="" />
+                </div>
+                <div class="team-content">
+                  <h2 class="title">Jacob Jones</h2>
+                  <span>Marketer</span>
+                  <ul class="team-social">
+                    <li>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="team__container">
+              <div class="team-item">
+                <div class="team-thumb">
+                  <img src="./assets/img/team/team_img06.png" alt="" />
+                </div>
+                <div class="team-content">
+                  <h2 class="title">Courtney Henry</h2>
+                  <span>Founder</span>
+                  <ul class="team-social">
+                    <li>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="team__container">
+              <div class="team-item">
+                <div class="team-thumb">
+                  <img src="./assets/img/team/team_img07.png" alt="" />
+                </div>
+                <div class="team-content">
+                  <h2 class="title">Ronald Richards</h2>
+                  <span>Account Manager</span>
+                  <ul class="team-social">
+                    <li>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="team__container">
+              <div class="team-item">
+                <div class="team-thumb">
+                  <img src="./assets/img/team/team_img08.png" alt="" />
+                </div>
+                <div class="team-content">
+                  <h2 class="title">Theresa Webb</h2>
+                  <span>Founder & CO</span>
+                  <ul class="team-social">
+                    <li>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Team -->
+      <!-- Contact -->
+      <section id="contact" class="contact-area pt-70 pb-110">
+        <div class="grid__container pl-15 pr-15">
+          <div class="grid__row justify-content-center">
+            <div class="grid__section">
+              <div class="section-title text-center mb-70">
+                <span class="subtitle">Contact</span>
+                <h2 class="title">
+                  <span class="title--cyan">Contact</span>
+                  ICO Crypto
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="contact-info-wrap">
+            <div class="grid__row justify-content-center">
+              <div class="contact-info-container">
+                <div class="contact-info-item">
+                  <div class="icon">
+                    <span class="icon-bg"></span>
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="content">
+                    <p>
+                      company@gmail.com
+                      <br />
+                      infoweb@gmail.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-info-container">
+                <div class="contact-info-item">
+                  <div class="icon icon--pink">
+                    <span class="icon-bg"></span>
+                    <i class="fa-solid fa-phone-flip"></i>
+                  </div>
+                  <div class="content">
+                    <p>
+                      +84 0977425031
+                      <br />
+                      +998 765 775 34
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-info-container">
+                <div class="contact-info-last-item">
+                  <div class="icon icon--cyan">
+                    <span class="icon-bg"></span>
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="content">
+                    <p>
+                      State/province/area:
+                      <br />
+                      Georgia 198
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-wrap">
+            <form action="#">
+              <div class="grid__row">
+                <div class="form-container">
+                  <div class="form-grp">
+                    <input type="text" placeholder="Enter your Name" required />
+                  </div>
+                </div>
+                <div class="form-container">
+                  <div class="form-grp">
+                    <input
+                      type="email"
+                      placeholder="Enter your email"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-grp">
+                <textarea
+                  name="massage"
+                  placeholder="Enter your massage"
+                ></textarea>
+              </div>
+              <div class="submit-btn text-center">
+                <button type="submit" class="btn">Send massage</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact -->
     </main>
     <!-- End Main -->
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="grid__container pl-15 pr-15">
+          <div class="footer-scroll-wrap">
+            <button class="scroll-to-target" data-target="html">
+              <i class="fa-solid fa-arrow-up"></i>
+            </button>
+          </div>
+          <div class="footer-top">
+            <div class="grid__row">
+              <div class="footer-container no-animation">
+                <div class="footer-widget">
+                  <a href="index.html" class="f-logo">
+                    <img src="./assets/img/logo/logo.png" alt="" />
+                  </a>
+                  <div class="footer-content">
+                    <p>
+                      A new way to make the payments easy, reliable and 100%
+                      secure. claritatem itamconse quat. Exerci tationulla
+                    </p>
+                    <ul class="footer-social">
+                      <li>
+                        <a href="#">
+                          <i class="fa-brands fa-youtube"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-skype"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-container no-animation">
+                <div class="footer-widget">
+                  <h4 class="fw-title">Useful Links</h4>
+                  <div class="footer-link">
+                    <ul>
+                      <li><a href="#">Contact us</a></li>
+                      <li><a href="#">How it Works</a></li>
+                      <li><a href="#">Create</a></li>
+                      <li><a href="#">Explore</a></li>
+                      <li><a href="#">Terms & Services</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-container no-animation">
+                <div class="footer-widget">
+                  <h4 class="fw-title">Community</h4>
+                  <div class="footer-link">
+                    <ul>
+                      <li><a href="#">Help Center</a></li>
+                      <li><a href="#">Partners</a></li>
+                      <li><a href="#">Suggestions</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Newsletters</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-container no-animation">
+                <div class="footer-widget">
+                  <h4 class="fw-title">Subscribe Newsletter</h4>
+                  <div class="footer-newsletters">
+                    <p>
+                      Exerci tation ullamcorper suscipit lobortis nisl aliquip
+                      ex ea commodo
+                    </p>
+                    <form action="#">
+                      <input
+                        type="email"
+                        placeholder="Info@gmail.com"
+                        required
+                      />
+                      <button type="submit">
+                        <i class="fa-solid fa-paper-plane"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="grid__row align-item-center">
+              <div class="footer-bottom-container">
+                <div class="copyright-text">
+                  <p>Copyright © 2022. All Rights Reserved Bigtech</p>
+                </div>
+              </div>
+              <div class="footer-bottom-container">
+                <div class="footer-menu">
+                  <ul>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Login / Signup</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
   </body>
 </html>

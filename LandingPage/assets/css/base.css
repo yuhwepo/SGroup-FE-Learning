@@ -12,11 +12,19 @@ img,
 picture,
 svg,
 video {
-  display: block;
+  /* display: block; */
   max-width: 100%;
+  vertical-align: middle;
 }
 body {
   min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #a4b4c3;
+  font-style: normal;
+  background-color: #030b15;
+  line-height: 1.75;
 }
 
 :root {
@@ -33,7 +41,30 @@ body {
   --background-color: #030b15;
   --forceground-color: #0b1d33;
   --transition: all 0.3s ease-out;
-  --transition-5ms: all 0.5s ease-out;
+  --transition-500ms: all 0.5s ease-out;
+  --transition-700ms: all 0.7s ease-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  color: var(--white-color);
+  margin-top: 0px;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 html {
@@ -52,6 +83,12 @@ html {
 
 .grid__container {
   width: 1320px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.custom-grid__container {
+  width: 1700px;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -93,6 +130,7 @@ html {
   text-align: center;
 }
 
+/* PADDING */
 .pl-15 {
   padding-left: 1.5rem;
 }
@@ -100,12 +138,38 @@ html {
   padding-right: 1.5rem;
 }
 
+.pt-60 {
+  padding-top: 6rem;
+}
+
+.pt-70 {
+  padding-top: 7rem;
+}
+
+.pb-70 {
+  padding-bottom: 7rem;
+}
+
+.pb-110 {
+  padding-bottom: 11rem;
+}
+
 .pl-120 {
   padding-left: 12rem;
 }
 
+.pt-130 {
+  padding-top: 13rem;
+}
+
 .pb-130 {
   padding-bottom: 13rem;
+}
+
+/* MARGIN */
+
+.mt-50 {
+  margin-top: 5rem;
 }
 
 .mt-130 {
@@ -124,6 +188,55 @@ html {
   margin-left: 7rem;
 }
 
+.mb-35 {
+  margin-bottom: 3.5rem !important;
+}
+
 .mb-50 {
   margin-bottom: 5rem !important;
 }
+
+.mb-60 {
+  margin-bottom: 6rem !important;
+}
+
+.mb-70 {
+  margin-bottom: 7rem !important;
+}
+
+/* ANIMATION */
+.fadeInRight {
+  animation: fadeInRight 1.5s both 0.2s;
+}
+
+.fadeInLeft {
+  animation: fadeInLeft 1.5s both 0.2s;
+}
+
+@keyframes fadeInRight {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(3rem);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-3rem);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* EFFECT */

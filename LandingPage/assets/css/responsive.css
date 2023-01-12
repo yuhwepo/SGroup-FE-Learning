@@ -1,4 +1,4 @@
-@media (max-width: 93.75em) {
+@media (max-width: 93.75em /* 1500px */) {
   .grid {
     width: 1250px;
   }
@@ -30,7 +30,7 @@
   }
 
   .navbar__action-btn .btn {
-    padding: 1.6rem 3.5rem;
+    padding: 1.2rem 3.8rem;
   }
 
   .about__container-content .btn {
@@ -41,9 +41,14 @@
   .nav-content .btn {
     min-width: 16rem;
   }
+
+  .btn {
+    font-size: 1.3rem;
+    padding: 1.5rem 3.5rem;
+  }
 }
 
-@media (max-width: 74.99875em) {
+@media (max-width: 74.99875em /* 1199.98px */) {
   .grid__container {
     width: 96rem;
   }
@@ -116,15 +121,31 @@
   }
 
   .chart__order {
-    min-width: 45rem;
+    min-width: 48rem;
   }
 
   .chart-wrap {
     padding: 6rem 3rem;
   }
+
+  .footer-menu ul li {
+    padding: 0 2rem;
+  }
+
+  .team__container {
+    width: 33.33333%;
+  }
+
+  .footer-container {
+    width: 33.33333%;
+  }
+
+  .footer-top .footer-container:nth-child(2) {
+    width: 41.66667%;
+  }
 }
 
-@media (max-width: 61.99875em) {
+@media (max-width: 61.99875em /* 991.98px */) {
   .grid,
   .grid__container {
     width: 72rem;
@@ -143,9 +164,7 @@
   }
 
   .mobile-nav-toggler {
-    color: #fff;
-    font-size: 3rem;
-    margin-left: 4rem;
+    display: block;
   }
 
   .banner__shape--one {
@@ -226,9 +245,70 @@
     margin-top: 5rem;
     width: 100%;
   }
+
+  .document .grid__row {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .document-content.mt-50 {
+    margin-top: 0;
+    margin-bottom: 5rem;
+  }
+
+  .document__container--59 {
+    width: 100%;
+  }
+
+  .document__container--41 {
+    width: 58.33333333%;
+  }
+
+  .team-thumb::before {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .team-content .title {
+    margin-bottom: 0.8rem;
+    font-size: 1.8rem;
+  }
+
+  .contact-form-wrap {
+    padding: 6rem;
+  }
+
+  .footer-bottom {
+    padding: 1.8rem 0;
+  }
+
+  .copyright-text p {
+    margin-bottom: 0.5rem;
+  }
+
+  .contact-info-container {
+    width: 50%;
+  }
+
+  .contact-info-item::before {
+    display: none;
+  }
+
+  .footer-bottom-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-menu ul {
+    justify-content: center;
+  }
+
+  .footer-container {
+    width: 50%;
+  }
 }
 
-@media (max-width: 47.99875em) {
+@media (max-width: 47.99875em /* 767.98px */) {
   .grid,
   .grid__container {
     width: 54rem;
@@ -299,12 +379,45 @@
   }
 
   .chart__order,
-  .chart-info {
+  .chart-info,
+  .document__container--41,
+  .form-container,
+  .footer-container {
     width: 100%;
+  }
+
+  .section-title .title br {
+    display: none;
+  }
+
+  .team__container {
+    width: 50%;
+  }
+
+  .team-thumb::before {
+    width: 22.6rem;
+    height: 22.6rem;
+  }
+
+  .contact-form-wrap {
+    padding: 3.5rem 2rem;
+  }
+
+  .footer-top .footer-container:nth-child(2) .footer-widget {
+    margin-left: 0;
+  }
+
+  .footer-top .footer-container:nth-child(2),
+  .footer-top .footer-container:nth-child(3) {
+    width: 50%;
+  }
+
+  .footer-newsletters p {
+    margin-bottom: 4rem;
   }
 }
 
-@media (min-width: 36em) and (max-width: 47.9375em) {
+@media (min-width: 36em /* 576px */) and (max-width: 47.9375em /* 767px */) {
   .banner__container-content-text {
     font-size: 3.2rem;
   }
@@ -314,24 +427,51 @@
   }
 }
 
-@media (max-width: 35.99875em) {
+@media (max-width: 35.99875em /* 575.98px */) {
   .banner__progress {
-    min-width: 36.7rem;
+    min-width: 100%;
+  }
+
+  .about__container-content {
+    min-height: 0;
   }
 
   /* .banner__countdown-time {
     max-width: 52.8rem;
   } */
 
-  .partner__box-img {
-    width: 100%;
-  }
-
-  .chart-wrap ul li {
+  .partner__box-img,
+  .chart-wrap ul li,
+  .team__container,
+  .contact-info-container,
+  .footer-top .footer-container:nth-child(2),
+  .footer-top .footer-container:nth-child(3) {
     width: 100%;
   }
 
   .chart__order {
     max-width: 35.8rem;
   }
+
+  .contact-info-item::before {
+    display: none;
+  }
+
+  .footer-menu {
+    display: none;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 46.1875em) {
+}
+
+/* TABLET */
+
+@media (min-width: 46.25em) and (max-width: 63.9375) {
+}
+
+/* PC */
+@media (min-width: 64em) {
 }
