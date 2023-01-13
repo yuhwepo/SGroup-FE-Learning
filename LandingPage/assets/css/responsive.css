@@ -120,8 +120,12 @@
     margin-bottom: 2rem;
   }
 
+  .choose-box {
+    min-width: 29.7rem;
+  }
+
   .chart__order {
-    min-width: 48rem;
+    /* min-width: 48rem; */
   }
 
   .chart-wrap {
@@ -203,8 +207,8 @@
   }
 
   .about-img--left {
-    left: 6rem;
-    top: 4rem;
+    left: 0;
+    top: 0;
   }
 
   .about__container-content {
@@ -222,6 +226,10 @@
 
   .partner__box-img {
     width: 33.33%;
+  }
+
+  .choose-box {
+    min-width: 33.5rem;
   }
 
   .chart__inner-container {
@@ -371,7 +379,8 @@
   }
 
   .choose-box {
-    width: 26.5rem;
+    min-width: 51rem;
+    width: 100%;
   }
 
   .choose-item {
@@ -450,7 +459,7 @@
   }
 
   .chart__order {
-    max-width: 35.8rem;
+    /* max-width: 35.8rem; */
   }
 
   .contact-info-item::before {

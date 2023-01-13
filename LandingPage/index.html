@@ -25,11 +25,18 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
-    <script defer src="./assets/scripts/main.js"></script>
   </head>
   <body>
+    <div id="preloader">
+      <div class="spinner">
+        <div class="rect1 rect"></div>
+        <div class="rect2 rect"></div>
+        <div class="rect3 rect"></div>
+        <div class="rect4 rect"></div>
+      </div>
+    </div>
     <!-- Header -->
-    <header id="header">
+    <header id="header" class="header">
       <div class="grid">
         <nav class="navbar pl-15 pr-15">
           <div class="navbar__container">
@@ -83,76 +90,76 @@
               <i class="fa-solid fa-bars"></i>
             </div>
           </ul>
-          <!-- Mobile Menu -->
-          <div class="mobile-menu">
-            <nav class="menu-box">
-              <div class="close-btn">
-                <i class="fa-solid fa-xmark"></i>
-              </div>
-              <div class="nav-logo">
-                <a href="index.html">
-                  <img src="./assets/img/logo/logo.png" alt="" />
-                </a>
-              </div>
-              <div class="menu-outer">
-                <ul class="navigation">
-                  <li class="menu-item-has-children">
-                    <a href="" class="section-link">Home</a>
-                    <ul class="sub-menu">
-                      <li><a href="">Home One</a></li>
-                      <li><a href="">Home Two</a></li>
-                    </ul>
-                    <div class="dropdown-btn">
-                      <span class="fa-solid fa-chevron-down"></span>
-                    </div>
-                  </li>
-                  <li><a href="" class="section-link">About us</a></li>
-                  <li><a href="" class="section-link">Sales</a></li>
-                  <li><a href="" class="section-link">Roadmap</a></li>
-                  <li class="menu-item-has-children">
-                    <a href="#header" class="section-link">Blog</a>
-                    <ul class="sub-menu">
-                      <li><a href="">Our Blog</a></li>
-                      <li><a href="">Blog Details</a></li>
-                    </ul>
-                    <div class="dropdown-btn">
-                      <span class="fa-solid fa-chevron-down"></span>
-                    </div>
-                  </li>
-                  <li><a href="" class="section-link">Contact us</a></li>
-                </ul>
-              </div>
-              <div class="social-links">
-                <ul class="clearfix">
-                  <li>
-                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa-brands fa-youtube"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-          <div class="menu-backdrop"></div>
-          <!-- EndMobile Menu -->
         </nav>
       </div>
+      <!-- Mobile Menu -->
+      <div class="mobile-menu">
+        <nav class="menu-box">
+          <div class="close-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="nav-logo">
+            <a href="index.html">
+              <img src="./assets/img/logo/logo.png" alt="" />
+            </a>
+          </div>
+          <div class="menu-outer">
+            <ul class="navigation">
+              <li class="menu-item-has-children">
+                <a href="" class="section-link">Home</a>
+                <ul class="sub-menu">
+                  <li><a href="">Home One</a></li>
+                  <li><a href="">Home Two</a></li>
+                </ul>
+                <div class="dropdown-btn">
+                  <span class="fa-solid fa-chevron-down"></span>
+                </div>
+              </li>
+              <li><a href="" class="section-link">About us</a></li>
+              <li><a href="" class="section-link">Sales</a></li>
+              <li><a href="" class="section-link">Roadmap</a></li>
+              <li class="menu-item-has-children">
+                <a href="#header" class="section-link">Blog</a>
+                <ul class="sub-menu">
+                  <li><a href="">Our Blog</a></li>
+                  <li><a href="">Blog Details</a></li>
+                </ul>
+                <div class="dropdown-btn">
+                  <span class="fa-solid fa-chevron-down"></span>
+                </div>
+              </li>
+              <li><a href="" class="section-link">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="social-links">
+            <ul class="clearfix">
+              <li>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="menu-backdrop"></div>
+      <!-- EndMobile Menu -->
     </header>
     <!-- End header -->
     <!-- Main -->
     <main class="main">
       <!-- Banner -->
-      <section id="banner" class="banner">
+      <section id="banner" class="banner section--active">
         <div class="banner__shape">
           <img
             src="./assets/img/banner/banner_shape01.png"
@@ -232,7 +239,7 @@
       </section>
       <!-- End Banner -->
       <!-- About -->
-      <section id="about" class="about mb-130">
+      <section id="about" class="about section--active pt-60 pb-130">
         <div
           class="about__container grid__container pl-15 pr-15 grid__row align-items-center"
         >
@@ -268,7 +275,7 @@
       </section>
       <!-- End About -->
       <!-- Partner -->
-      <section class="partner mb-130">
+      <section class="partner pb-130">
         <div
           class="partner__container grid__container flex-col align-items-center"
         >
@@ -325,77 +332,273 @@
             </p>
           </div>
           <div class="choose__container-box">
-            <div class="choose-box">
-              <div class="choose-item">
-                <div class="choose-icon">
-                  <img src="./assets/img/icon/choose_icon01.svg" alt="" />
-                </div>
-                <div class="choose-content">
-                  <h2 class="choose-content-title">
-                    <a href="#">Mobile payment make easy</a>
-                  </h2>
-                  <p class="choose-content-text">
-                    Add new, trending and rare artwork to your collection.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="choose-box">
-              <div class="choose-item">
-                <div class="choose-icon">
-                  <img src="./assets/img/icon/choose_icon02.svg" alt="" />
-                </div>
-                <div class="choose-content">
-                  <h2 class="choose-content-title">
-                    <a href="#">Lifetime free transaction</a>
-                  </h2>
-                  <p class="choose-content-text">
-                    Add new, trending and rare artwork to your collection.
-                  </p>
+            <div class="choose__container-wrapper">
+              <div class="choose-box">
+                <div class="choose-item">
+                  <div class="choose-icon">
+                    <img src="./assets/img/icon/choose_icon01.svg" alt="" />
+                  </div>
+                  <div class="choose-content">
+                    <h2 class="choose-content-title">
+                      <a href="#">Mobile payment make easy</a>
+                    </h2>
+                    <p class="choose-content-text">
+                      Add new, trending and rare artwork to your collection.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="choose-box">
-              <div class="choose-item">
-                <div class="choose-icon">
-                  <img src="./assets/img/icon/choose_icon03.svg" alt="" />
-                </div>
-                <div class="choose-content">
-                  <h2 class="choose-content-title">
-                    <a href="#">
-                      Protect the
-                      <br />
-                      identity
-                    </a>
-                  </h2>
-                  <p class="choose-content-text">
-                    Add new, trending and rare artwork to your collection.
-                  </p>
+              <div class="choose-box">
+                <div class="choose-item">
+                  <div class="choose-icon">
+                    <img src="./assets/img/icon/choose_icon02.svg" alt="" />
+                  </div>
+                  <div class="choose-content">
+                    <h2 class="choose-content-title">
+                      <a href="#">Lifetime free transaction</a>
+                    </h2>
+                    <p class="choose-content-text">
+                      Add new, trending and rare artwork to your collection.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="choose-box">
-              <div class="choose-item">
-                <div class="choose-icon">
-                  <img src="./assets/img/icon/choose_icon04.svg" alt="" />
+              <div class="choose-box">
+                <div class="choose-item">
+                  <div class="choose-icon">
+                    <img src="./assets/img/icon/choose_icon03.svg" alt="" />
+                  </div>
+                  <div class="choose-content">
+                    <h2 class="choose-content-title">
+                      <a href="#">
+                        Protect the
+                        <br />
+                        identity
+                      </a>
+                    </h2>
+                    <p class="choose-content-text">
+                      Add new, trending and rare artwork to your collection.
+                    </p>
+                  </div>
                 </div>
-                <div class="choose-content">
-                  <h2 class="choose-content-title">
-                    <a href="#">Sercurity & control over money</a>
-                  </h2>
-                  <p class="choose-content-text">
-                    Add new, trending and rare artwork to your collection.
-                  </p>
+              </div>
+              <div class="choose-box">
+                <div class="choose-item">
+                  <div class="choose-icon">
+                    <img src="./assets/img/icon/choose_icon04.svg" alt="" />
+                  </div>
+                  <div class="choose-content">
+                    <h2 class="choose-content-title">
+                      <a href="#">Sercurity & control over money</a>
+                    </h2>
+                    <p class="choose-content-text">
+                      Add new, trending and rare artwork to your collection.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="choose-box">
+                <div class="choose-item">
+                  <div class="choose-icon">
+                    <img src="./assets/img/icon/choose_icon01.svg" alt="" />
+                  </div>
+                  <div class="choose-content">
+                    <h2 class="choose-content-title">
+                      <a href="#">Mobile payment make easy</a>
+                    </h2>
+                    <p class="choose-content-text">
+                      Add new, trending and rare artwork to your collection.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="choose-box">
+                <div class="choose-item">
+                  <div class="choose-icon">
+                    <img src="./assets/img/icon/choose_icon02.svg" alt="" />
+                  </div>
+                  <div class="choose-content">
+                    <h2 class="choose-content-title">
+                      <a href="#">Lifetime free transaction</a>
+                    </h2>
+                    <p class="choose-content-text">
+                      Add new, trending and rare artwork to your collection.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="choose-box">
+                <div class="choose-item">
+                  <div class="choose-icon">
+                    <img src="./assets/img/icon/choose_icon03.svg" alt="" />
+                  </div>
+                  <div class="choose-content">
+                    <h2 class="choose-content-title">
+                      <a href="#">
+                        Protect the
+                        <br />
+                        identity
+                      </a>
+                    </h2>
+                    <p class="choose-content-text">
+                      Add new, trending and rare artwork to your collection.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="choose-box">
+                <div class="choose-item">
+                  <div class="choose-icon">
+                    <img src="./assets/img/icon/choose_icon04.svg" alt="" />
+                  </div>
+                  <div class="choose-content">
+                    <h2 class="choose-content-title">
+                      <a href="#">Sercurity & control over money</a>
+                    </h2>
+                    <p class="choose-content-text">
+                      Add new, trending and rare artwork to your collection.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="choose-box">
+                <div class="choose-item">
+                  <div class="choose-icon">
+                    <img src="./assets/img/icon/choose_icon01.svg" alt="" />
+                  </div>
+                  <div class="choose-content">
+                    <h2 class="choose-content-title">
+                      <a href="#">Mobile payment make easy</a>
+                    </h2>
+                    <p class="choose-content-text">
+                      Add new, trending and rare artwork to your collection.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="choose-box">
+                <div class="choose-item">
+                  <div class="choose-icon">
+                    <img src="./assets/img/icon/choose_icon02.svg" alt="" />
+                  </div>
+                  <div class="choose-content">
+                    <h2 class="choose-content-title">
+                      <a href="#">Lifetime free transaction</a>
+                    </h2>
+                    <p class="choose-content-text">
+                      Add new, trending and rare artwork to your collection.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="choose-box">
+                <div class="choose-item">
+                  <div class="choose-icon">
+                    <img src="./assets/img/icon/choose_icon03.svg" alt="" />
+                  </div>
+                  <div class="choose-content">
+                    <h2 class="choose-content-title">
+                      <a href="#">
+                        Protect the
+                        <br />
+                        identity
+                      </a>
+                    </h2>
+                    <p class="choose-content-text">
+                      Add new, trending and rare artwork to your collection.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="choose-box">
+                <div class="choose-item">
+                  <div class="choose-icon">
+                    <img src="./assets/img/icon/choose_icon04.svg" alt="" />
+                  </div>
+                  <div class="choose-content">
+                    <h2 class="choose-content-title">
+                      <a href="#">Sercurity & control over money</a>
+                    </h2>
+                    <p class="choose-content-text">
+                      Add new, trending and rare artwork to your collection.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="choose-box">
+                <div class="choose-item">
+                  <div class="choose-icon">
+                    <img src="./assets/img/icon/choose_icon01.svg" alt="" />
+                  </div>
+                  <div class="choose-content">
+                    <h2 class="choose-content-title">
+                      <a href="#">Mobile payment make easy</a>
+                    </h2>
+                    <p class="choose-content-text">
+                      Add new, trending and rare artwork to your collection.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="choose-box">
+                <div class="choose-item">
+                  <div class="choose-icon">
+                    <img src="./assets/img/icon/choose_icon02.svg" alt="" />
+                  </div>
+                  <div class="choose-content">
+                    <h2 class="choose-content-title">
+                      <a href="#">Lifetime free transaction</a>
+                    </h2>
+                    <p class="choose-content-text">
+                      Add new, trending and rare artwork to your collection.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="choose-box">
+                <div class="choose-item">
+                  <div class="choose-icon">
+                    <img src="./assets/img/icon/choose_icon03.svg" alt="" />
+                  </div>
+                  <div class="choose-content">
+                    <h2 class="choose-content-title">
+                      <a href="#">
+                        Protect the
+                        <br />
+                        identity
+                      </a>
+                    </h2>
+                    <p class="choose-content-text">
+                      Add new, trending and rare artwork to your collection.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="choose-box">
+                <div class="choose-item">
+                  <div class="choose-icon">
+                    <img src="./assets/img/icon/choose_icon04.svg" alt="" />
+                  </div>
+                  <div class="choose-content">
+                    <h2 class="choose-content-title">
+                      <a href="#">Sercurity & control over money</a>
+                    </h2>
+                    <p class="choose-content-text">
+                      Add new, trending and rare artwork to your collection.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="slide-progress"></div>
+          <div class="slide-progress">
+            <div class="progress-bar"></div>
+          </div>
         </div>
       </section>
       <!-- End Choose -->
       <!-- Chart -->
-      <section id="chart" class="chart chart-bg">
+      <section id="chart" class="chart chart-bg section--active">
         <div class="chart__container grid__container">
           <div class="chart__inner">
             <div class="chart__inner-container">
@@ -441,7 +644,10 @@
       <!-- Area -->
       <div class="area-bg">
         <!-- Roadmap -->
-        <section id="roadmap" class="roadmap-area pt-130 pb-130">
+        <section
+          id="roadmap"
+          class="roadmap-area section--active pt-130 pb-130"
+        >
           <div class="grid__container custom-grid__container">
             <div class="grid__row justify-content-center">
               <div
@@ -455,74 +661,76 @@
               </div>
             </div>
             <div class="bt-roadmap-wrap pl-15 pr-15">
-              <div class="bt-roadmap-item">
-                <span class="roadmap-title">Mid 0f Q4 2021</span>
-                <div class="roadmap-content">
-                  <span class="dot"></span>
-                  <h4 class="content-title">Concept</h4>
-                  <span>EVM support for parthians</span>
-                  <span>SubQuery Academy</span>
-                  <span>Proof of indexing</span>
+              <div class="bt-roadmap-progress">
+                <div class="bt-roadmap-item">
+                  <span class="roadmap-title">Mid 0f Q4 2021</span>
+                  <div class="roadmap-content">
+                    <span class="dot"></span>
+                    <h4 class="content-title">Concept</h4>
+                    <span>EVM support for parthians</span>
+                    <span>SubQuery Academy</span>
+                    <span>Proof of indexing</span>
+                  </div>
                 </div>
-              </div>
-              <div class="bt-roadmap-item">
-                <span class="roadmap-title">Mid 0f Q4 2021</span>
-                <div class="roadmap-content">
-                  <span class="dot"></span>
-                  <h4 class="content-title">Research</h4>
-                  <span>SubQuery Builders/Grants Program</span>
-                  <span>SQT Network contract internal MVP</span>
-                  <span>Coordinator and client SDK</span>
+                <div class="bt-roadmap-item">
+                  <span class="roadmap-title">Mid 0f Q4 2021</span>
+                  <div class="roadmap-content">
+                    <span class="dot"></span>
+                    <h4 class="content-title">Research</h4>
+                    <span>SubQuery Builders/Grants Program</span>
+                    <span>SQT Network contract internal MVP</span>
+                    <span>Coordinator and client SDK</span>
+                  </div>
                 </div>
-              </div>
-              <div class="bt-roadmap-item">
-                <span class="roadmap-title">Mid 0f Q4 2021</span>
-                <div class="roadmap-content">
-                  <span class="dot"></span>
-                  <h4 class="content-title">App Beta Test</h4>
-                  <span>Public testnet launch</span>
-                  <span>SubQuery Network Explorer and dApp</span>
-                  <span>Point-in-time indexing</span>
+                <div class="bt-roadmap-item">
+                  <span class="roadmap-title">Mid 0f Q4 2021</span>
+                  <div class="roadmap-content">
+                    <span class="dot"></span>
+                    <h4 class="content-title">App Beta Test</h4>
+                    <span>Public testnet launch</span>
+                    <span>SubQuery Network Explorer and dApp</span>
+                    <span>Point-in-time indexing</span>
+                  </div>
                 </div>
-              </div>
-              <div class="bt-roadmap-item">
-                <span class="roadmap-title">Mid 0f Q4 2021</span>
-                <div class="roadmap-content">
-                  <span class="dot"></span>
-                  <h4 class="content-title">Token Test</h4>
-                  <span>SQT token generation event</span>
-                  <span>Public incentivize testnet launch</span>
-                  <span>Data traffic insights and reporting</span>
+                <div class="bt-roadmap-item">
+                  <span class="roadmap-title">Mid 0f Q4 2021</span>
+                  <div class="roadmap-content">
+                    <span class="dot"></span>
+                    <h4 class="content-title">Token Test</h4>
+                    <span>SQT token generation event</span>
+                    <span>Public incentivize testnet launch</span>
+                    <span>Data traffic insights and reporting</span>
+                  </div>
                 </div>
-              </div>
-              <div class="bt-roadmap-item">
-                <span class="roadmap-title">Mid 0f Q4 2021</span>
-                <div class="roadmap-content">
-                  <span class="dot"></span>
-                  <h4 class="content-title">Alpha Test</h4>
-                  <span>Launch of the SubQuery Foundation</span>
-                  <span>Finalise research for other Layer-1 chains</span>
-                  <span>Liquidity mining program</span>
+                <div class="bt-roadmap-item">
+                  <span class="roadmap-title">Mid 0f Q4 2021</span>
+                  <div class="roadmap-content">
+                    <span class="dot"></span>
+                    <h4 class="content-title">Alpha Test</h4>
+                    <span>Launch of the SubQuery Foundation</span>
+                    <span>Finalise research for other Layer-1 chains</span>
+                    <span>Liquidity mining program</span>
+                  </div>
                 </div>
-              </div>
-              <div class="bt-roadmap-item">
-                <span class="roadmap-title">Mid 0f Q4 2021</span>
-                <div class="roadmap-content">
-                  <span class="dot"></span>
-                  <h4 class="content-title">Benefits</h4>
-                  <span>Mainnet launch</span>
-                  <span>Centralized exchange launch</span>
-                  <span>Public incentivize testnet</span>
+                <div class="bt-roadmap-item">
+                  <span class="roadmap-title">Mid 0f Q4 2021</span>
+                  <div class="roadmap-content">
+                    <span class="dot"></span>
+                    <h4 class="content-title">Benefits</h4>
+                    <span>Mainnet launch</span>
+                    <span>Centralized exchange launch</span>
+                    <span>Public incentivize testnet</span>
+                  </div>
                 </div>
-              </div>
-              <div class="bt-roadmap-item">
-                <span class="roadmap-title">Mid 0f Q4 2021</span>
-                <div class="roadmap-content">
-                  <span class="dot"></span>
-                  <h4 class="content-title">Operational</h4>
-                  <span>SubQuery launches its</span>
-                  <span>own parthian</span>
-                  <span>SubQuery Foundation</span>
+                <div class="bt-roadmap-item">
+                  <span class="roadmap-title">Mid 0f Q4 2021</span>
+                  <div class="roadmap-content">
+                    <span class="dot"></span>
+                    <h4 class="content-title">Operational</h4>
+                    <span>SubQuery launches its</span>
+                    <span>own parthian</span>
+                    <span>SubQuery Foundation</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -783,7 +991,7 @@
       </section>
       <!-- End Team -->
       <!-- Contact -->
-      <section id="contact" class="contact-area pt-70 pb-110">
+      <section id="contact" class="contact-area section--active pt-70 pb-110">
         <div class="grid__container pl-15 pr-15">
           <div class="grid__row justify-content-center">
             <div class="grid__section">
@@ -884,7 +1092,11 @@
       <div class="footer">
         <div class="grid__container pl-15 pr-15">
           <div class="footer-scroll-wrap">
-            <button class="scroll-to-target" data-target="html">
+            <button
+              onclick="scrollToTop()"
+              class="scroll-to-target"
+              data-target="html"
+            >
               <i class="fa-solid fa-arrow-up"></i>
             </button>
           </div>
@@ -993,4 +1205,5 @@
     </footer>
     <!-- End Footer -->
   </body>
+  <script defer src="./assets/scripts/main.js"></script>
 </html>
