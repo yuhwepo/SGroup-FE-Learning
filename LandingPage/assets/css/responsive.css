@@ -462,6 +462,10 @@
     /* max-width: 35.8rem; */
   }
 
+  .choose-box {
+    min-width: 100%;
+  }
+
   .contact-info-item::before {
     display: none;
   }
@@ -469,18 +473,4 @@
   .footer-menu {
     display: none;
   }
-}
-
-/* MOBILE */
-
-@media (max-width: 46.1875em) {
-}
-
-/* TABLET */
-
-@media (min-width: 46.25em) and (max-width: 63.9375) {
-}
-
-/* PC */
-@media (min-width: 64em) {
 }

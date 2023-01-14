@@ -2,9 +2,13 @@
 
 const loader = document.getElementById("preloader");
 
-window.addEventListener("load", function () {
+function loadingPage() {
+  loader = setTimeout(showPage, 3000);
+}
+
+function showPage() {
   loader.style.display = "none";
-});
+}
 
 // MOBILE MENU
 const toggle = document.getElementById("mobile-menu-btn");
@@ -91,8 +95,6 @@ navigationItems.map((el, index) => {
   }
 });
 
-// console.log(navigationItemsCutted);
-
 const observerSection = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -174,7 +176,7 @@ function scrollToTop() {
   }
 })();
 
-//
+// Sale Tab
 
 const chartContent1 = document.querySelectorAll(".nav-content")[0];
 const chartContent2 = document.querySelectorAll(".nav-content")[1];
@@ -184,8 +186,6 @@ const chartNavLink1 = document.querySelectorAll(
 const chartNavLink2 = document.querySelectorAll(
   ".chart-nav .chart-nav-item"
 )[1];
-
-// console.log(chartContent1);
 
 function openTab2() {
   chartContent1.classList.toggle("fade");
@@ -200,8 +200,3 @@ function openTab1() {
   chartNavLink1.classList.remove("fade");
   chartNavLink2.classList.remove("open");
 }
-
-// function openTab1() {
-//   // chartContent2.style.display = "none";
-//   // chartContent1.style.display = "block";
-// }
