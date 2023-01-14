@@ -137,11 +137,12 @@ function scrollToTop() {
 
 // Slider
 (async () => {
+  let i = 1;
   const interval = 5000;
   const paddingRight = 19;
-  // const slideContainer = document.querySelector(".choose__container-box");
   const slidesWrapper = document.querySelector(".choose__container-wrapper");
   const slides = document.querySelectorAll(".choose-box");
+  const bar = document.querySelector(".progress-bar");
   const delay = (ms) => new Promise((r) => setTimeout(r, ms));
   const movLeft = (el, mov) =>
     new Promise((r) => {
@@ -152,6 +153,13 @@ function scrollToTop() {
       };
       el.style.transition = "1s";
       el.style.transform = `translateX(${-mov}px)`;
+
+      if (i > 6) {
+        i = 0;
+      }
+      width = `16.66666%*${i}`;
+      bar.style.width = `calc(${width})`;
+      i++;
     });
 
   let index = 0;
@@ -165,3 +173,35 @@ function scrollToTop() {
     index = ++index % slides.length;
   }
 })();
+
+//
+
+const chartContent1 = document.querySelectorAll(".nav-content")[0];
+const chartContent2 = document.querySelectorAll(".nav-content")[1];
+const chartNavLink1 = document.querySelectorAll(
+  ".chart-nav .chart-nav-item"
+)[0];
+const chartNavLink2 = document.querySelectorAll(
+  ".chart-nav .chart-nav-item"
+)[1];
+
+// console.log(chartContent1);
+
+function openTab2() {
+  chartContent1.classList.toggle("fade");
+  chartContent2.classList.toggle("open");
+  chartNavLink1.classList.toggle("fade");
+  chartNavLink2.classList.toggle("open");
+}
+
+function openTab1() {
+  chartContent1.classList.remove("fade");
+  chartContent2.classList.remove("open");
+  chartNavLink1.classList.remove("fade");
+  chartNavLink2.classList.remove("open");
+}
+
+// function openTab1() {
+//   // chartContent2.style.display = "none";
+//   // chartContent1.style.display = "block";
+// }
