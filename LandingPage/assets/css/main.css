@@ -325,13 +325,23 @@ html {
 }
 
 .sub-menu {
-  height: 0;
+  /* height: 0;
+  display: none; */
+  transition: height 0.35s ease-in-out;
+  overflow: hidden;
+}
+
+/* .showMenu .sub-menu {
+  height: fit-content;
+  display: block;
+} */
+
+.sub-menu:not(.active) {
   display: none;
 }
 
-.showMenu .sub-menu {
-  height: fit-content;
-  display: block;
+.dropdown-btn.active {
+  transform: rotate(90deg);
 }
 
 .mobile-menu .navigation li > ul > li:first-child {
@@ -361,9 +371,9 @@ html {
   z-index: 5;
 }
 
-.showMenu .dropdown-btn {
+/* .showMenu .dropdown-btn {
   transform: rotate(90deg);
-}
+} */
 
 .social-links {
 }

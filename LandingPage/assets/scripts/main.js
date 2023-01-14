@@ -34,15 +34,46 @@ backDrop.onclick = removeActive;
 closeBtn.onclick = removeActive;
 
 // Show submenu mobile
+
 for (let i = 0; i < dropDown.length; i++) {
-  dropDown[i].addEventListener("click", (e) => {
-    let dropDownParent = e.target.parentElement;
-    dropDownParent.classList.toggle("showMenu");
-    subMenu.classList.toggle("showMenu");
+  dropDown[i].addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const container = document.getElementById(this.dataset.container);
+    const dropDownParent = e.target.parentElement;
+
+    // console.log(container);
+
+    if (!container.classList.contains("active")) {
+      container.classList.add("active");
+      container.style.height = "auto";
+      dropDownParent.classList.toggle("active");
+
+      let height = container.clientHeight + "px";
+
+      container.style.height = "0px";
+
+      setTimeout(function () {
+        container.style.height = height;
+      }, 0);
+    } else {
+      container.style.height = "0px";
+      dropDownParent.classList.remove("active");
+
+      container.addEventListener(
+        "transitionend",
+        function () {
+          container.classList.remove("active");
+        },
+        {
+          once: true,
+        }
+      );
+    }
   });
 }
 
-// COUTNDOWN
+// COUNTDOWN
 
 const countDownDate = new Date("Sep 23, 2023 00:00:00").getTime();
 
